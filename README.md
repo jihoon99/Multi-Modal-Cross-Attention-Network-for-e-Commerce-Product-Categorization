@@ -22,9 +22,13 @@ How to refer between two different modalities. <br>
 train.py holds all the training process.
 <br>
 To train text only modal
+<br>
 
-`python train.py --modality text --logging_fn ./saved/text/text_finetuning.log --model_fn ./saved/text/text_finetuning.pth`
+`python train.py --modality text --logging_fn ./saved/text/text_finetuning.log --model_fn ./saved/text/text_finetuning.pth` <br>
+
 Since saved model is quite large, I except trained models from this repository.
-
+<br>
 To train multi modal(finetuned models are required)
+<br>
+
 `python train.py --modality both --multiModal_type cross --logging_fn ./saved/multi/full/multi_cross_6block.log --load_model_path ./saved/text/text.06.-0.93-0.88-.0.68-0.09-.pth`
