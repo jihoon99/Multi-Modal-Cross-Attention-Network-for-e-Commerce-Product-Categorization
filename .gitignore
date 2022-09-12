@@ -1,7 +1,7 @@
 # ignore
 /data/.
 /eda/eda.ipynb
-etc/
+/etc
 
 
 # Byte-compiled / optimized / DLL files
