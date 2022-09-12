@@ -1,7 +1,7 @@
 # ignore
-data/
-eda/
-etc/
+/data/.
+/eda/.
+/etc/.
 
 
 # Byte-compiled / optimized / DLL files
