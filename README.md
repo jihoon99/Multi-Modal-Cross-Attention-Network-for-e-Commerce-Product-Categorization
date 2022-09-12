@@ -13,9 +13,9 @@ As the spread of smart phones and the development of ICT, e-commerce market is r
 This model get product name(text) and image as input to classify Large, Medium, Small Sub category which has 57, 552, 3190, 404 categories respectively.
 <br>
 Preview : Structure of the model <br>
-<img src = 'png/1.png' height='400' width='300'> <br>
+<img src = 'png/1.png' height='300' width='500'> <br>
 How to refer between two different modalities. <br>
-<img src = 'png/2.png' height='400' width='300'> <br>
+<img src = 'png/2.png' height='300' width='500'> <br>
 
 ## Getting Trained
 
