@@ -37,7 +37,7 @@ def define_argparser():
     p.add_argument('--batch_size', type=int, default=128)
     p.add_argument('--adam_epsilon', type=float, default=1e-8)
     p.add_argument('--use_radam', default = True)                   
-    p.add_argument('--valid_ratio', type=float, default=0.000001)
+    p.add_argument('--valid_ratio', type=float, default=0.3)
     # sequence token length
     p.add_argument('--max_length', type=int, default=30)
     p.add_argument("--num_b", type=int, default=57)    # 대분류 카테고리수
