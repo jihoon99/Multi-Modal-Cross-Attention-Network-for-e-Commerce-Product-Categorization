@@ -29,7 +29,7 @@ from trainer import BertTrainer as Trainer
 def define_argparser():
     p = argparse.ArgumentParser()
 
-    p.add_argument('--train_fn', default='./data/train_df_negOne')
+    p.add_argument('--train_fn', default='./data/train_df_negOne')                         # dataFrame which holds text, img_path, labels
     p.add_argument('--pretrained_model_name', type=str, default='kykim/bert-kor-base')
     p.add_argument('--use_albert', action='store_true', default=False)
     p.add_argument('--gpu_id', type=int, default=0)
