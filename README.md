@@ -16,6 +16,14 @@ This model get product name(text) and image as input to classify Main, Middle, S
 <br>
 Preview : Structure of the model <br>
 <img src = 'png/1.png' height='300' width='500'> <br>
+
+> Firstly, FineTunning Train is needed for both Single Image Model and Text Model.
+> Secondly, Freeze all the weights of single Modality.
+> Thirdly, Retrain with Cross Attention Part.
+
+<br>
+<br>
+
 How to refer between two different modalities. <br>
 <img src = 'png/2.png' height='300' width='500'> <br>
 
