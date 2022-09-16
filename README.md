@@ -19,6 +19,12 @@ Preview : Structure of the model <br>
 How to refer between two different modalities. <br>
 <img src = 'png/2.png' height='300' width='500'> <br>
 
+> Cross Attention Part : Text refer itself and image at the same time. At this image t means text which is also q(query) and key and value would be bounded text and image. Get cross attention score between query and key by
+
+<p> $$ softmax(q_e*k_e / sqrt(d_k)) $$ </p>
+
+> Multiply cross attention score on value to emphasize and de-emphasize tensors. Finaly get residual to make deep layers.
+
 ---
 
 ### Training Process:
