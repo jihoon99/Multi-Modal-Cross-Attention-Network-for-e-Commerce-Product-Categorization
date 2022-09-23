@@ -33,8 +33,6 @@ How to refer between two different modalities. <br>
 
 > Multiply cross attention score on value to emphasize and de-emphasize tensors. Finaly get residual to make deep layers.
 
----
-
 ### Training Process:
 
 train.py holds all the training process.
@@ -87,3 +85,111 @@ I got better performance on Cross Multi Modality compare to single and multi con
 #### Comparison 3 : Number of Heads
 
 <img src = './png/6.png' width=600 height=400>
+
+---
+
+### Train-Tree
+
+├── README.md
+├── data
+│   ├── bpe
+│   ├── mecab
+│   ├── train_df_negOne_moreColumns
+│   └── validation.csv
+├── img_data
+├── inference.py
+├── model
+│   ├── multimodel.py
+│   └── trainer.py
+├── process
+│   ├── bert_dataset.py
+│   ├── bert_dataset1.py
+│   ├── bert_trainer.py
+│   ├── data_loader.py
+│   └── utils.py
+├── train.py
+├── trainer.py
+└── trainer_valid.py
+
+#### Data
+
+├── saved
+│   ├── img
+│   │   └── img_ffn.log
+│   ├── multi
+│   │   ├── full
+│   │   │   └── multi_cross_6block.log
+│   │   ├── multi_cross_12block.log
+│   │   ├── multi_cross_2block.log
+│   │   ├── ...
+│   │   ├── multi_simple_concat.log
+│   │   ├── multi_simple_concat_0530
+│   │   └── old
+│   │   └── multi_simple_concat_past_old.log
+│   └── text
+│   ├── multi_simple_concat.log
+│   └── text_finetuning.log
+├── predict
+│   ├── dev
+│   │   ├── img
+│   │   │   └── img_config
+│   │   ├── multi
+│   │   │   ├── all_multi_6block_6th_predict.log
+│   │   │   ├── all_multi_6block_config
+│   │   │   ├── dev_multi_cross_12block_config
+│   │   │   ├── dev_multi_cross_2block_config
+│   │   │   ├── dev_multi_cross_6block_2head_config
+│   │   │   ├── dev_multi_cross_6block_4head_config
+│   │   │   ├── dev_multi_cross_6block_6head_config
+│   │   │   ├── dev_multi_cross_6block_config
+│   │   │   ├── dev_multi_simple_config
+│   │   │   ├── multi_cross_12block_6th_predict.log
+│   │   │   ├── multi_cross_2block_6th_predict.log
+│   │   │   ├── multi_cross_6block_2head_6th_predict.log
+│   │   │   ├── multi_cross_6block_4head_6th_predict.log
+│   │   │   ├── multi_cross_6block_6head_6th_predict.log
+│   │   │   ├── multi_cross_6block_6th_predict.log
+│   │   │   ├── multi_simple_6th_predict.log
+│   │   │   └── simple_6th_predict
+│   │   └── text
+│   │   ├── text_config
+│   │   ├── text_predict.csv
+│   │   └── text_predict.log
+│   ├── new
+│   │   ├── img
+│   │   │   ├── img_config
+│   │   │   └── img_predict.log
+│   │   ├── multi
+│   │   │   ├── cross_12block_1head.log
+│   │   │   ├── cross_12block_1head_config
+│   │   │   ├── cross_1block_1head.log
+│   │   │   ├── cross_1block_1head_config
+│   │   │   ├── cross_1head.log
+│   │   │   ├── cross_6block_1head.log
+│   │   │   ├── cross_6block_1head_config
+│   │   │   ├── cross_6block_2head.log
+│   │   │   ├── cross_6block_2head_config
+│   │   │   ├── cross_6block_4head.log
+│   │   │   ├── cross_6block_4head_config
+│   │   │   ├── cross_6block_6head.log
+│   │   │   ├── cross_6block_6head_config
+│   │   │   ├── cross_config
+│   │   │   ├── simple_concat.log
+│   │   │   └── simple_concat_config
+│   │   └── text
+│   │   ├── text_config
+│   │   └── text_predict.log
+│   └── valid
+│   ├── img
+│   │   ├── img_config
+│   │   └── img_predict.log
+│   ├── multi
+│   │   ├── cross_12block_1head.log
+│   │   ├── cross_12block_1head_config
+│   │   ├── ...
+│   │   └── multi_simple_predict.log
+│   └── text
+│   ├── text_config
+│   └── text_predict.log
+
+---
